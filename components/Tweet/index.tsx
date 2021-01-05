@@ -1,13 +1,19 @@
 import React from 'react'
 import { View, Text } from 'react-native'
-export type TweetProps = {
+import LeftContainer from './LeftContainer'
+import MainContainer from './MainContainer'
 
+import { TweetType } from '../../types'
+
+export type TweetProps = {
+    tweet: TweetType,
 }
 
-const Tweet = (props: TweetProps) => (
+
+const Tweet = ({ tweet }: TweetProps) => (
     <View>
-        {/* <LeftContainer /> */}
-        {/* <MainContainer /> */}
+        <LeftContainer user={tweet.user} />
+        <MainContainer />
     </View>
 )
 
