@@ -1,5 +1,7 @@
 export type RootStackParamList = {
   Root: undefined;
+  NewTweet: undefined;
+  Fleet: undefined;
   NotFound: undefined;
 };
 
@@ -23,7 +25,7 @@ export type UserType = {
   name: string,
   username: string,
   image?: string,
-},
+}
 
 export type TweetType = {
   id: string,
@@ -34,4 +36,13 @@ export type TweetType = {
   numberOfComments?: number,
   numberOfRetweets?: number,
   numberOfLikes?: number,
+}
+
+export type FleetType = {
+  id: string,
+  createdAt: string,
+  user: UserType,
+  type: string,
+  text?: string,
+  image?: string,
 }
