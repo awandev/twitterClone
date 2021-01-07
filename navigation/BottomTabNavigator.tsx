@@ -98,6 +98,10 @@ function HomeNavigator() {
       />
     </TabOneStack.Navigator>
   );
+
+
+
+
 }
 
 const TabTwoStack = createStackNavigator<TabTwoParamList>();

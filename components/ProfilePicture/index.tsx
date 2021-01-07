@@ -6,6 +6,9 @@ export type ProfilePictureProps = {
     size?: number,
 }
 
+
+
+
 const ProfilePicture = ({ image, size = 50 }: ProfilePictureProps) => (
     <Image
         source={{ uri: image }}

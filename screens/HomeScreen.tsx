@@ -5,14 +5,17 @@ import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 import Tweet from '../components/Tweet';
 import { TweetType } from '../types'
+import Feed from '../components/Feed'
 
 
 import tweets from '../data/tweets'
+import NewTweetButton from '../components/NewTweetButton';
 
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      <Tweet tweet={tweets[0]} />
+      <Feed />
+      <NewTweetButton />
     </View>
   );
 }
@@ -20,8 +23,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+
   },
 
 });
